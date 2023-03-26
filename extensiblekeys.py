@@ -99,7 +99,7 @@ def read_file(file_name: str, pw: str) -> dict:
     checksum = create_checksum(keys, salt)
     check = key_dat[-1].replace('CHECKSUM: ', '')
     if unpad(cipher.decrypt(base64.b64decode(check.encode("ascii"))), 16) != checksum:
-        return 'File could not be decrypted'
+        raise DecryptionError
     return keys
 
 
