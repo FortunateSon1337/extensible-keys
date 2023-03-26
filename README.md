@@ -1,6 +1,6 @@
 # <b>Extensible Keys</b>
 ## Extensible Key Format:
-### The extensible key format was designed to serve as an alternative to .PEM with a (slightly) less verbose syntax and more importantly, built in password protection and authetification of your keys.
+The Extensible Key format was designed as an alternative method for storing and password-protecting keys, largely made for personal research purposes.
 ## <br>File Syntax:
 ### All .ekf files follow this format:
 [Base64-Encoded 128-Bit Salt]:[Base64-Encoded 128-Bit IV]<br>
